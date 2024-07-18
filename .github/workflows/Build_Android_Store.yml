@@ -1,9 +1,10 @@
 name: Build and Upload to Play Store
-on: 
-  push:
-    branches: 
-      - "releases/**" 
-      - "features/**"
+on: push
+# on: 
+#   push:
+#     branches: 
+#       - "releases/**" 
+#       - "features/**"
     
 jobs: 
   Build:
