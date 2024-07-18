@@ -40,7 +40,7 @@ jobs:
         working-directory: frontend
 
       - name: 🚀 Build app
-        run: eas build -p android --profile production --local --non-interactive --clear-cache --output "./aab/in42.aab"
+        run: eas build -p android --profile production --local --non-interactive --clear-cache --output "./aab/SightSeeker.aab"
         working-directory: frontend
         
           
@@ -49,7 +49,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: buildArtifact
-          path: ./frontend/aab/in42.aab
+          path: ./frontend/aab/SightSeeker.aab
 
       - name: Create service_account.json
         run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
@@ -59,7 +59,7 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: com.in42.IN42
-          releaseFiles: ./frontend/aab/in42.aab
+          releaseFiles: ./frontend/aab/SightSeeker.aab
           track: internal # will likely need to change in the future
           status: draft #note this will need to be changed later to completed or removed
           # whatsNewDirectory: distribution/         
