@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "SightSeeker",
-    "slug": "SightSeeker",
-    "version": "1.0.0",
+    "slug": "sightseeker",
+    "version": "0.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -22,6 +22,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cf615c05-d2b0-483d-a4fc-f65040f8e681"
+      }
+    },
+    "owner": "mrm0lten"
   }
 }
