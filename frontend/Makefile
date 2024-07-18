@@ -24,4 +24,4 @@ delete:
 	rm -rf ./$(F_SETUP)/nvm
 	rm -rf ./$(F_SETUP)
 	rm -rf ${HOME}/Android
-  
+   
